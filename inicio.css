@@ -1,0 +1,134 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007aff;
+}
+
+/* Sección principal */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #555;
+}
+
+.hero-text .btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007aff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.hero-text .btn-primary:hover {
+    background-color: #005bb5;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Sección de información */
+.info-section {
+    padding: 3rem 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-section li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Logo sin estilo de enlace */
+.logo-link {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto del logo */
+    font-weight: bold;
+    font-size: 1.5rem; /* Ajusta el tamaño del logo */
+}
+
+.logo-link:hover {
+    color: inherit; /* Evita el cambio de color al pasar el cursor */
+}

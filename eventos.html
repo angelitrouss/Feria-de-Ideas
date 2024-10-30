@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora recorridos temáticos en nuestra aplicación de Realidad Virtual para el Retiro: Historia, Naturaleza y Biodiversidad, Arte y Escultura.">
+    <title>Recorridos Temáticos</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo"><a href="inicio.html" class="logo-link">Inicio</a></div>
+    </nav>
+
+    <!-- Sección de Recorridos Temáticos -->
+    <section class="recorridos">
+        <h1>Recorridos Temáticos en Realidad Virtual</h1>
+        <p>Explora los diferentes recorridos temáticos que hemos diseñado para enriquecer tu experiencia de retiro. Selecciona una ruta y descubre datos curiosos e información relevante.</p>
+
+        <!-- Rutas de Exploración -->
+        <div class="rutas-container">
+            <!-- Historia del Retiro -->
+            <div class="ruta">
+                <h2>Historia del Retiro</h2>
+                <p>Explora la historia del retiro a lo largo de los siglos. Conoce cómo ha cambiado esta etapa de vida en diferentes culturas y épocas.</p>
+                <button onclick="mostrarDetalles('historia')">Ver más</button>
+                <div class="detalles" id="historia">
+                    <p><strong>Sabías que:</strong> En la Antigua Roma, los guerreros retirados recibían tierras y privilegios como compensación por sus servicios. En Japón, la tradición de jubilarse era parte de la filosofía zen, enfocándose en una vida de contemplación.</p>
+                </div>
+            </div>
+
+            <!-- Naturaleza y Biodiversidad -->
+            <div class="ruta">
+                <h2>Naturaleza y Biodiversidad</h2>
+                <p>Sumérgete en los paisajes naturales que podrías explorar en tu retiro. Desde montañas y bosques hasta playas y desiertos.</p>
+                <button onclick="mostrarDetalles('naturaleza')">Ver más</button>
+                <div class="detalles" id="naturaleza">
+                    <p><strong>Sabías que:</strong> La diversidad biológica aumenta significativamente el bienestar. Algunos estudios sugieren que las personas que pasan tiempo en la naturaleza durante el retiro viven más y con mejor calidad de vida.</p>
+                </div>
+            </div>
+
+            <!-- Arte y Escultura -->
+            <div class="ruta">
+                <h2>Arte y Escultura</h2>
+                <p>Descubre el mundo del arte y la escultura en esta etapa. Viaja virtualmente por museos, galerías y sitios históricos dedicados a la expresión artística.</p>
+                <button onclick="mostrarDetalles('arte')">Ver más</button>
+                <div class="detalles" id="arte">
+                    <p><strong>Sabías que:</strong> El arte ha sido una forma de retiro espiritual desde la Edad Media, cuando los monjes creaban manuscritos iluminados como medio de introspección y creatividad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 VR Retiro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarDetalles(id) {
+            const detalles = document.getElementById(id);
+            detalles.style.display = detalles.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
