@@ -3,50 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora recorridos temáticos en nuestra aplicación de Realidad Virtual para el Retiro: Historia, Naturaleza y Biodiversidad, Arte y Escultura.">
-    <title>Recorridos Temáticos</title>
+    <title>Realidad Aumentada - Retiro Interactivo</title>
     <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar">
-        <div class="logo"><a href="inicio.html" class="logo-link">Inicio</a></div>
+        <a href="./inicio.html" class="logo logo-link">Retiro Interactivo</a>
     </nav>
 
-    <!-- Sección de Recorridos Temáticos -->
-    <section class="recorridos">
-        <h1>Recorridos Temáticos en Realidad Virtual</h1>
-        <p>Explora los diferentes recorridos temáticos que hemos diseñado para enriquecer tu experiencia de retiro. Selecciona una ruta y descubre datos curiosos e información relevante.</p>
+    <!-- Sección de Realidad Aumentada -->
+    <section class="hero" id="realidad-aumentada">
+        <div class="hero-text">
+            <h1>Explora el Pasado con Realidad Aumentada</h1>
+            <p>Con la realidad aumentada, podrás descubrir cómo lucían lugares en el pasado o ver detalles ocultos de obras de arte mientras exploras el mundo de forma interactiva.</p>
+            <a href="#experiencias" class="btn-primary">Descubre más</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500" alt="Realidad Aumentada en acción">
+        </div>
+    </section>
 
-        <!-- Rutas de Exploración -->
+    <!-- Sección de Experiencias en AR -->
+    <section class="info-section" id="experiencias">
+        <h2>Experiencias Interactivas con AR</h2>
+        <p>La realidad aumentada abre un mundo de posibilidades para enriquecer tu experiencia en el retiro. Descubre cómo esta tecnología puede ayudarte a entender mejor el entorno que te rodea.</p>
+
         <div class="rutas-container">
-            <!-- Historia del Retiro -->
+            <!-- Historia del lugar -->
             <div class="ruta">
-                <h2>Historia del Retiro</h2>
-                <p>Explora la historia del retiro a lo largo de los siglos. Conoce cómo ha cambiado esta etapa de vida en diferentes culturas y épocas.</p>
-                <button onclick="mostrarDetalles('historia')">Ver más</button>
-                <div class="detalles" id="historia">
-                    <p><strong>Sabías que:</strong> En la Antigua Roma, los guerreros retirados recibían tierras y privilegios como compensación por sus servicios. En Japón, la tradición de jubilarse era parte de la filosofía zen, enfocándose en una vida de contemplación.</p>
+                <h3>Viaje al Pasado</h3>
+                <p>Apunta tu dispositivo hacia los monumentos históricos, edificios antiguos o sitios de interés y observa cómo cobran vida con la historia. La AR te permitirá ver cómo eran en su esplendor, con datos históricos que te ayudarán a comprender su relevancia.</p>
+                <button onclick="mostrarDetalles('historia-ar')">Ver más</button>
+                <div class="detalles" id="historia-ar" style="display: none;">
+                    <p><strong>Curiosidad:</strong> ¿Sabías que algunas de las estructuras de la Antigua Roma se reconstruyen con AR, permitiendo a los usuarios explorar la ciudad tal y como era hace miles de años?</p>
                 </div>
             </div>
 
-            <!-- Naturaleza y Biodiversidad -->
+            <!-- Arte interactivo -->
             <div class="ruta">
-                <h2>Naturaleza y Biodiversidad</h2>
-                <p>Sumérgete en los paisajes naturales que podrías explorar en tu retiro. Desde montañas y bosques hasta playas y desiertos.</p>
-                <button onclick="mostrarDetalles('naturaleza')">Ver más</button>
-                <div class="detalles" id="naturaleza">
-                    <p><strong>Sabías que:</strong> La diversidad biológica aumenta significativamente el bienestar. Algunos estudios sugieren que las personas que pasan tiempo en la naturaleza durante el retiro viven más y con mejor calidad de vida.</p>
+                <h3>Descubre el Arte Oculto</h3>
+                <p>Las obras de arte tienen secretos que pueden ser revelados con AR. Al apuntar la cámara de tu dispositivo hacia una pintura o escultura, puedes obtener información adicional, como los detalles ocultos en las pinceladas o los materiales utilizados.</p>
+                <button onclick="mostrarDetalles('arte-ar')">Ver más</button>
+                <div class="detalles" id="arte-ar" style="display: none;">
+                    <p><strong>Dato interesante:</strong> En algunas galerías de arte, los visitantes pueden usar AR para ver las versiones originales de las pinturas que han sido restauradas, mostrando cómo lucían antes de la intervención.</p>
                 </div>
             </div>
 
-            <!-- Arte y Escultura -->
+            <!-- Flora y fauna interactiva -->
             <div class="ruta">
-                <h2>Arte y Escultura</h2>
-                <p>Descubre el mundo del arte y la escultura en esta etapa. Viaja virtualmente por museos, galerías y sitios históricos dedicados a la expresión artística.</p>
-                <button onclick="mostrarDetalles('arte')">Ver más</button>
-                <div class="detalles" id="arte">
-                    <p><strong>Sabías que:</strong> El arte ha sido una forma de retiro espiritual desde la Edad Media, cuando los monjes creaban manuscritos iluminados como medio de introspección y creatividad.</p>
+                <h3>Conoce la Naturaleza</h3>
+                <p>La AR te permitirá conocer más sobre la flora y fauna del entorno. Solo tienes que apuntar la cámara a un árbol o una planta para descubrir su especie, edad y otros datos curiosos sobre su historia y usos en el pasado.</p>
+                <button onclick="mostrarDetalles('naturaleza-ar')">Ver más</button>
+                <div class="detalles" id="naturaleza-ar" style="display: none;">
+                    <p><strong>Dato curioso:</strong> En algunos parques, los usuarios pueden ver representaciones de especies animales extintas o en peligro de extinción mediante AR, lo que ayuda a concienciar sobre su conservación.</p>
                 </div>
             </div>
         </div>
@@ -54,13 +64,13 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 VR Retiro. Todos los derechos reservados.</p>
+        <p>© 2024 Retiro Interactivo. Todos los derechos reservados.</p>
     </footer>
 
     <script>
         function mostrarDetalles(id) {
             const detalles = document.getElementById(id);
-            detalles.style.display = detalles.style.display === "none" ? "block" : "none";
+            detalles.style.display = detalles.style.display === 'none' ? 'block' : 'none';
         }
     </script>
 </body>

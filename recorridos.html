@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora recorridos temáticos en nuestra aplicación de Realidad Virtual para el Retiro: Historia, Naturaleza y Biodiversidad, Arte y Escultura.">
-    <title>Recorridos Temáticos</title>
+    <title>Retiro Interactivo</title>
     <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
+
     <!-- Barra de navegación -->
     <nav class="navbar">
-        <div class="logo"><a href="inicio.html" class="logo-link">Inicio</a></div>
+        <a href="./inicio.html" class="logo logo-link">Retiro Interactivo</a>
     </nav>
 
-    <!-- Sección de Recorridos Temáticos -->
-    <section class="recorridos">
-        <h1>Recorridos Temáticos en Realidad Virtual</h1>
+    <!-- Sección principal (Hero) -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Bienvenido a los Recorridos Virtuales</h1>
+            <p>Explora los mejores recorridos temáticos diseñados para tu retiro en nuestra plataforma interactiva.</p>
+            <a href="#recorridos" class="btn-primary">Descubre los recorridos</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500" alt="Recorridos Virtuales">
+        </div>
+    </section>
+
+    <!-- Sección de recorridos -->
+    <section class="info-section" id="recorridos">
+        <h2>Recorridos Temáticos en Realidad Virtual</h2>
         <p>Explora los diferentes recorridos temáticos que hemos diseñado para enriquecer tu experiencia de retiro. Selecciona una ruta y descubre datos curiosos e información relevante.</p>
 
-        <!-- Rutas de Exploración -->
         <div class="rutas-container">
             <!-- Historia del Retiro -->
             <div class="ruta">
                 <h2>Historia del Retiro</h2>
                 <p>Explora la historia del retiro a lo largo de los siglos. Conoce cómo ha cambiado esta etapa de vida en diferentes culturas y épocas.</p>
                 <button onclick="mostrarDetalles('historia')">Ver más</button>
-                <div class="detalles" id="historia">
+                <div class="detalles" id="historia" style="display: none;">
                     <p><strong>Sabías que:</strong> En la Antigua Roma, los guerreros retirados recibían tierras y privilegios como compensación por sus servicios. En Japón, la tradición de jubilarse era parte de la filosofía zen, enfocándose en una vida de contemplación.</p>
                 </div>
             </div>
@@ -35,7 +46,7 @@
                 <h2>Naturaleza y Biodiversidad</h2>
                 <p>Sumérgete en los paisajes naturales que podrías explorar en tu retiro. Desde montañas y bosques hasta playas y desiertos.</p>
                 <button onclick="mostrarDetalles('naturaleza')">Ver más</button>
-                <div class="detalles" id="naturaleza">
+                <div class="detalles" id="naturaleza" style="display: none;">
                     <p><strong>Sabías que:</strong> La diversidad biológica aumenta significativamente el bienestar. Algunos estudios sugieren que las personas que pasan tiempo en la naturaleza durante el retiro viven más y con mejor calidad de vida.</p>
                 </div>
             </div>
@@ -45,23 +56,79 @@
                 <h2>Arte y Escultura</h2>
                 <p>Descubre el mundo del arte y la escultura en esta etapa. Viaja virtualmente por museos, galerías y sitios históricos dedicados a la expresión artística.</p>
                 <button onclick="mostrarDetalles('arte')">Ver más</button>
-                <div class="detalles" id="arte">
+                <div class="detalles" id="arte" style="display: none;">
                     <p><strong>Sabías que:</strong> El arte ha sido una forma de retiro espiritual desde la Edad Media, cuando los monjes creaban manuscritos iluminados como medio de introspección y creatividad.</p>
+                </div>
+            </div>
+
+            <!-- Ruta de Bienestar y Meditación -->
+            <div class="ruta">
+                <h2>Bienestar y Meditación</h2>
+                <p>Adéntrate en el mundo del bienestar y la meditación. Aprende técnicas que te ayudarán a alcanzar paz interior y mejorar tu calidad de vida.</p>
+                <button onclick="mostrarDetalles('bienestar')">Ver más</button>
+                <div class="detalles" id="bienestar" style="display: none;">
+                    <p><strong>Sabías que:</strong> La meditación reduce el estrés, mejora la concentración y aumenta el bienestar general. Es una herramienta esencial para los momentos de retiro.</p>
+                </div>
+            </div>
+
+            <!-- Viajes Culturales -->
+            <div class="ruta">
+                <h2>Viajes Culturales</h2>
+                <p>Viaja por las culturas más fascinantes del mundo. Conoce sus tradiciones, su historia y la manera en que se viven los retiros en diferentes partes del planeta.</p>
+                <button onclick="mostrarDetalles('culturales')">Ver más</button>
+                <div class="detalles" id="culturales" style="display: none;">
+                    <p><strong>Sabías que:</strong> En algunos países asiáticos, los retiros espirituales son parte esencial de la vida cotidiana, integrándose en las actividades diarias como la meditación o la reflexión sobre la vida.</p>
                 </div>
             </div>
         </div>
     </section>
+    <br><br>
+    <!-- Sección de testimonios -->
+    <section class="info-section" id="testimonios">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <div class="testimonios-container">
+            <div class="testimonio">
+                <p>"Gracias a los recorridos virtuales, pude encontrar un lugar de paz en mi vida. Las experiencias han sido reveladoras y transformadoras." - <strong>Ana Martínez</strong></p>
+            </div>
+            <div class="testimonio">
+                <p>"Me encantaron los recorridos culturales. Fue como viajar por el mundo sin moverme de mi hogar. ¡Totalmente recomendable!" - <strong>Carlos González</strong></p>
+            </div>
+            <div class="testimonio">
+                <p>"Los recorridos de naturaleza me han ayudado a sentirme más relajado y conectado con el mundo exterior. Una experiencia única." - <strong>Luisa Fernández</strong></p>
+            </div>
+        </div>
+
+        <h2>¡Únete a la experiencia Retiro Interactivo!</h2>
+        <p>Regístrate hoy y comienza tu viaje de retiro con nuestros recorridos interactivos. Descubre paz, conocimiento y bienestar a través de la tecnología.</p>
+        <a href="#registro" class="btn-primary">Regístrate ahora</a>
+    </section>
+    <br><br>
+    <!-- Sección sobre nosotros -->
+    <section class="info-section" id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+        <p>En Retiro Interactivo, creemos que el retiro no es un final, sino un nuevo comienzo. Ofrecemos una plataforma de recorridos virtuales para enriquecer tu vida, ayudarte a encontrar paz y bienestar, y explorar nuevas perspectivas. Con nuestros recorridos, podrás viajar, aprender y reflexionar desde la comodidad de tu hogar.</p>
+    </section>
 
     <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 VR Retiro. Todos los derechos reservados.</p>
+    <footer id="contacto">
+        <p>&copy; 2024 Retiro Interactivo. Todos los derechos reservados.</p>
+        <ul class="nav-links">
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+        </ul>
     </footer>
 
+    <!-- Script para mostrar detalles -->
     <script>
         function mostrarDetalles(id) {
-            const detalles = document.getElementById(id);
-            detalles.style.display = detalles.style.display === "none" ? "block" : "none";
+            var detalles = document.getElementById(id);
+            if (detalles.style.display === "none") {
+                detalles.style.display = "block";
+            } else {
+                detalles.style.display = "none";
+            }
         }
     </script>
+
 </body>
 </html>

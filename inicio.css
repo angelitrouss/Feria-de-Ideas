@@ -81,6 +81,7 @@
 }
 
 .hero-image img {
+    margin-left: 20px;
     max-width: 100%;
     border-radius: 10px;
 }
@@ -131,4 +132,94 @@ footer {
 
 .logo-link:hover {
     color: inherit; /* Evita el cambio de color al pasar el cursor */
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo para toda la página */
+body {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Hace que el footer esté al final */
+    background: linear-gradient(135deg, #f0f0f0, #ffffff); /* Fondo degradado */
+}
+
+/* Sección de contacto */
+.info-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+    flex-grow: 1; /* Hace que ocupe el espacio disponible */
+    background: linear-gradient(135deg, #fff, #e0e0e0); /* Fondo suave para la sección */
+}
+
+.contact-title {
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    font-weight: bold; /* Hacemos que el título sea negrita */
+    color: #333; /* Color oscuro para el texto */
+}
+
+.contact-card {
+    display: flex; /* Usamos flexbox para alinear en filas */
+    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+    gap: 2rem; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es pequeño */
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1; /* Esto permite que cada columna ocupe el mismo espacio */
+    min-width: 250px; /* Establecemos un ancho mínimo para las columnas */
+    max-width: 300px; /* Y un ancho máximo para mantener un diseño uniforme */
+}
+
+.contact-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.social-links {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007aff;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #005bb5;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Hace que el footer se mantenga abajo */
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
